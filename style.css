@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.profile-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 370px;
+  width: 100%;
+  border-radius: 24px;
+  /* background:rgb(225, 221, 221); */
+  padding: 25px;
+  box-shadow: 0px 13px 15px rgba(0, 0, 0, 0.9);
+  /* position: relative; */
+}
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: #0000.1;
+  margin: 20px;
+  margin-top: -10px;
+}
+
+.image .profile-img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid grey;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+.media-button {
+  margin: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.media-button .link {
+  height: 34px;
+  width: 34px;
+  color: white;
+  background-color: #4040f4;
+  margin: 0px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 22px;
+}
+
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* border: 2px solid #fff4ff; */
+  margin: 0px 12px;
+}
+.buttons .button {
+    font-size: 18px;
+  padding: 0px 12px;
+  margin: 6px;
+  border: 2px solid grey;
+  border-radius: 50px;
+  background-color: #4040f4;
+  color: #fff;
+  cursor: pointer;
+}
+.buttons .button:hover {
+  background-color:#fff;
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+.analytics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.analytics .data {
+  border-right: 2px solid #bebec2;
+  padding: 12px;
+}
+.data i {
+  font-size: 18px;
+  margin-right: 6px;
+  margin-top: 10px;
+}
+.analytics .data:last-child {
+  border-right: none;
+}
